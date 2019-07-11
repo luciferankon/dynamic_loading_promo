@@ -4,20 +4,20 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="style.css">
-        <script src="main.js"></script>
+        <link rel="stylesheet" href="_static/css/style.css">
+        <script src="_static/js/main.js"></script>
         <title>install</title>
     </head>
     <body>
         <div class="table">
             <div>
-                <div class="os_option" id="windows">
+                <div class="os_option">
                     <button class="tab-title-os" data-os-type="windows">Windows</button>
                 </div>
-                <div class="os_option" id="macOS" >
+                <div class="os_option">
                     <button class="tab-title-os" data-os-type="mac">macOS</button>
                 </div>
-                <div class="os_option" id="linux" >
+                <div class="os_option">
                     <button class="tab-title-os" data-os-type="linux">Linux</button>
                 </div>
             </div>
@@ -52,35 +52,35 @@
         <div id="selected-details">
             <div id="os-content">
                 <div class="hidden" id="windows-content">
-                    <p>Gauge can be installed by using <a class="reference external" href="https://chocolatey.org/">Chocolatey</a> .</p>
+                  {% include '../../html/windows_content.html' %}
                 </div>
                 <div class="hidden" id="mac-content">
-                    <p>Install Gauge by using <a class="reference external" href="https://brew.sh/">Homebrew</a>.</p>
+                  {% include '../../html/mac_content.html' %}
                 </div>
                 <div class="hidden" id="linux-content">
-                    <p>You can install Gauge on any flavour of Linux by using the shell script.</p>
+                  {% include '../../html/linux_content.html' %}
                 </div>
             </div>
             <div id="lang-content">
                 <div class="hidden" id="js-content">
-                    <p>Javascript</p>
+                  {% include '../../html/js_content.html' %}
                 </div>
                 <div class="hidden" id="java-content">
-                    <p>Java</p>
+                  {% include '../../html/java_content.html' %}
                 </div>
                 <div class="hidden" id="ruby-content">
-                    <p>Ruby</p>
+                  {% include '../../html/ruby_content.html' %}
                 </div>
             </div>
             <div id="ide-content">
                 <div class="hidden" id="vscode-content">
-                    <p>VsCode</p>
+                  {% include '../../html/vscode_content.html' %}
                 </div>
                 <div class="hidden" id="intellij-content">
-                    <p>Intellij</p>
+                  {% include '../../html/intetllij_content.html' %}
                 </div>
                 <div class="hidden" id="vs-content">
-                    <p>VS</p>
+                  {% include '../../html/vs_content.html' %}                  
                 </div>
             </div>
         </div>
