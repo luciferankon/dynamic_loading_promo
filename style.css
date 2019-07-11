@@ -1,0 +1,13 @@
+.table {
+    display: flex;
+    flex-direction: row;
+}
+
+.selected_details {
+    display: flex;
+    flex-direction: row;
+}
+
+.hidden {
+    display: none;
+}
