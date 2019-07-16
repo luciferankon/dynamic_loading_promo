@@ -8,3 +8,6 @@ Choose your Setup to install Gauge
 ----------------------------------
 
 Select your setup to see the instruction for installing gauge.
+
+.. include:: options.rst
+.. include:: windows_content.rst
