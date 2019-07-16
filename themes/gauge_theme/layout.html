@@ -1,5 +1,26 @@
+{%- block doctype -%}{%- if html5_doctype %}
+<!DOCTYPE html>
+{%- else %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{%- endif %}{%- endblock %}
+
+<script type="text/javascript" id="documentation_options" data-url_root="{{ pathto('', 1) }}" src="{{ pathto('_static/documentation_options.js', 1) }}"></script>
+  {%- for scriptfile in script_files %}
+  <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+  {%- endfor %}
+
+  <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
+  {%- for css in css_files %}
+    {%- if css|attr("filename") %}
+  {{ css_tag(css) }}
+    {%- else %}
+  <link rel="stylesheet" href="{{ pathto(css, 1) }}" type="text/css" />
+    {%- endif %}
+  {%- endfor %}
+  <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
+  
+{% block body %}{% endblock %}
 {% if pagename == 'index' %}
 {% include '_landing.html' %}
-{% else %}
-{% block body %}{% endblock %}
 {% endif %}

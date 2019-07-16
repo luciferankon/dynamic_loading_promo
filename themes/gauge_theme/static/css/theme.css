@@ -224,7 +224,22 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
   background-image: url("../img/xml-logo.svg");
 }
 
+.table {
+  display: flex;
+  flex-direction: row;
+}
+
+.selected_details {
+  display: flex;
+  flex-direction: row;
+}
+
+.hidden {
+  display: none;
+}
+
 .sidebar-wrapper {
+  display: none;
   border-left: 0.5px solid #222222;
   padding-left: 10px !important;
   margin: 20px 0 0 0;
@@ -340,7 +355,7 @@ code {
   } 
 }
 
-@media (min-width:$screen-lg){
+@media (min-width:screen-lg){
   .feature-wrapper h3{
     font-size: 20px;
   }
@@ -457,7 +472,7 @@ code {
 }
 
 .localtoc ul li ul  a:hover {
-  border-bottom:1px dotted rgb(245, 193, 14);=
+  border-bottom:1px dotted rgb(245, 193, 14);
 }
 
 #rightNav .rst-breadcrumbs-buttons a:hover{
@@ -1027,6 +1042,7 @@ img {
     margin: 0 0 30px; }
 
 .footer {
+  display: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
