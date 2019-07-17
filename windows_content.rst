@@ -1,3 +1,5 @@
+.. cssclass :: hidden os-content windows
+
 Step 1: Installing Gauge on Windows
 -----------------------------------
 

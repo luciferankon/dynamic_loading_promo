@@ -31,37 +31,37 @@ const showContent = function(){
 }
 
 const showOs = function() {
-    const contentContainer = document.getElementById("os-content");
-    for(elem of contentContainer.children){
+    const contentContainer = document.getElementsByClassName("os-content");
+    for(elem of contentContainer){
         if(!elem.classList.contains("hidden")){
             elem.classList.add("hidden")
         }
     }
     const os = event.target.getAttribute("data-os-type");
-    const contentElement = document.getElementById(os + "-content");
-    contentElement.classList.remove("hidden")
+    const contentElement = document.getElementsByClassName(os);
+    contentElement[0].classList.remove("hidden")
 };
 
 const showLang = function() {
-    const contentContainer = document.getElementById("lang-content");
-    for(elem of contentContainer.children){
+    const contentContainer = document.getElementsByClassName("lang-content");
+    for(elem of contentContainer){
         if(!elem.classList.contains("hidden")){
             elem.classList.add("hidden")
         }
     }
     const lang = event.target.getAttribute("data-lang-type");
-    const contentElement = document.getElementById(lang + "-content");
-    contentElement.classList.remove("hidden")
+    const contentElement = document.getElementsByClassName(lang);
+    contentElement[0].classList.remove("hidden")
 };
 
 const showIde = function() {
-    const contentContainer = document.getElementById("ide-content");
-    for(elem of contentContainer.children){
+    const contentContainer = document.getElementsByClassName("ide-content");
+    for(elem of contentContainer){
         if(!elem.classList.contains("hidden")){
             elem.classList.add("hidden")
         }
     }
     const ide = event.target.getAttribute("data-ide-type");
-    const contentElement = document.getElementById(ide + "-content");
-    contentElement.classList.remove("hidden")
+    const contentElement = document.getElementsByClassName(ide);
+    contentElement[0].classList.remove("hidden")
 };

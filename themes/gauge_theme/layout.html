@@ -1,3 +1,4 @@
+{% if pagename == 'index' %}
 {%- block doctype -%}{%- if html5_doctype %}
 <!DOCTYPE html>
 {%- else %}
@@ -19,5 +20,8 @@
     {%- endif %}
   {%- endfor %}
   <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
-  
+{% endif %}
 {% block body %}{% endblock %}
+{% if pagename == 'index' %}
+{% include '_landing.html' %}
+{% endif %}

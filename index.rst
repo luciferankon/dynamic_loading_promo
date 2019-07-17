@@ -9,5 +9,12 @@ Choose your Setup to install Gauge
 
 Select your setup to see the instruction for installing gauge.
 
-.. include:: options.rst
 .. include:: windows_content.rst
+.. include:: mac_content.rst
+.. include:: linux_content.rst
+.. include:: java_content.rst
+.. include:: js_content.rst
+.. include:: ruby_content.rst
+.. include:: intellij_content.rst
+.. include:: vs_content.rst
+.. include:: vscode_content.rst
